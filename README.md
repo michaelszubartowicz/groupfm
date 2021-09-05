@@ -22,7 +22,7 @@ Run GroupFM
 =======
 GroupFM is realized by a python script which is running the original libFM implementation in the background. Therefore you need to follow these steps:
 
-- compile libFM
+- compile libFM (Windows compilation with cygwin is supported; see libFM documentation and forum)
 - depending on your platform the location string of libFM might be corrected (variable `libFM_location`)
 - run the python script `Exec_GroupFM.py`
 
