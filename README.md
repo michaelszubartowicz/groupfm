@@ -1,19 +1,28 @@
-libFM
+GroupFM
 =====
 
-Library for factorization machines
+Implementation and dataset of the paper
 
-web: http://www.libfm.org/
+*title revealed upon successful publication*
 
-forum: https://groups.google.com/forum/#!forum/libfm
 
-Factorization machines (FM) are a generic approach that allows to mimic most factorization models by feature engineering. This way, factorization machines combine the generality of feature engineering with the superiority of factorization models in estimating interactions between categorical variables of large domain. libFM is a software implementation for factorization machines that features stochastic gradient descent (SGD) and alternating least squares (ALS) optimization as well as Bayesian inference using Markov Chain Monte Carlo (MCMC).
+Dataset
+======
+The dataset consists of four csv files found in the subfolder `GroupFM`.
 
-Compile
+*group_assignments.csv* lists which group each user belongs to.
+
+*group_types.csv* denotes, whether the group members are familiar or collected by random selection.
+
+*group_ratings.csv* contains the base ratings as well as the indicated impact of each contextual variable for each group.
+
+*user_ratings.csv* contains the base ratings as well as the indicated impact of each contextual variable for each user.
+
+Run GroupFM
 =======
-libFM has been tested with the GNU compiler collection and GNU make. libFM and the tools can be compiled with
-> make all
+GroupFM is realized by a python script which is running the original libFM implementation in the background. Therefore you need to follow these steps:
 
-Usage
-=====
-Please see the [libFM 1.4.2 manual](http://www.libfm.org/libfm-1.42.manual.pdf) for details about how to use libFM. If you have questions, please visit the [forum](https://groups.google.com/forum/#!forum/libfm).
+- compile libFM
+- depending on your platform the location string of libFM might be corrected (variable `libFM_location`)
+- run the python script `Exec_GroupFM.py`
+
