@@ -3,7 +3,8 @@ GroupFM
 
 Implementation and dataset of the paper
 
-*title revealed upon successful publication*
+Szubartowicz, Michael, "GroupFM: Enabling Context-Aware Group Recommendations with Factorization Machines" (2021). *ICIS 2021 Proceedings. 5.*
+https://aisel.aisnet.org/icis2021/data_analytics/data_analytics/5
 
 
 Dataset
